@@ -1,1 +1,1 @@
-# Title
+# Meteor Boilerplate Project
