@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 export const NoteListHeader = (props) => {
     return (
         <div>
-            <button onClick={() => props.meteorCall('notes.insert')}>Create Note</button>
+            <button type="button" onClick={() => props.meteorCall('notes.insert')}>Create Note</button>
         </div>
     );
 };
