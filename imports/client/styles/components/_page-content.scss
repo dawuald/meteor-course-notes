@@ -1,18 +1,30 @@
 .page-content{
     max-width: $site-max-width;
     margin: 0 auto;
-    padding: $large-space $space;
     display: flex;
     height: $page-content-height;
+    
+    @include desktop{
+        padding: $large-space $space;
+    }
 }
 
 .page-content__sidebar {
+    display: none;    
     width: $page-content-sidebar-width;
-    display: flex;
     padding-right: $large-space;
+
+    @include desktop{
+        display: flex;
+    }
 }
 
 .page-content__main {
-    width: $page-content-main-width;    
     display: flex;
+    width: 100%;
+
+    @include desktop{
+        width: $page-content-main-width;    
+    }
+
 }
